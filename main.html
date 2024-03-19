@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+		<script async src="opencv.js" type="text/javascript"></script>
+		<script src="load_image.js" type="text/javascript"></script>
+		<title>Skimia detection</title>
+	</head>
+	<body>
+
+    <div id="buttonContainer">
+		<input type="file" id="imageInput" style="display: none;" />
+		<button id="showImage" onclick="document.getElementById('imageInput').click();" />Importuj zdjęcie</button>
+        <button id="showResultsBtn">Dokonaj zliczenia</button>
+    </div>
+
+    <div id="imageContainer">
+        <img id="previewImage">
+        <canvas id="canvas"></canvas>	
+    </div>
+	
+	<div id="results"></div>
+	</body>
+</html>
